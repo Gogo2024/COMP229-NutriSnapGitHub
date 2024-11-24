@@ -43,9 +43,10 @@ function Add_Item() {
   return (
     <div>
       <div>
-        <h1>Add Items Page</h1>
+        <h1>Add Item</h1>
         <form onSubmit={submit}>
           <div>
+            <p>Product Information</p>
             <input
               type="text"
               name="name"
