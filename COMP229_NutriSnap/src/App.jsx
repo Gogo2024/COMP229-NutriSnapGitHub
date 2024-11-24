@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Upload_Barcode from './Upload_Barcode';
 import AI_Image from './AI_Image';
 import Add_Item from './Add_Item';
+import History from './History/History';
 import './App.css';
 
 function App() {
@@ -62,6 +63,15 @@ function App() {
                       <button className="SnacksButton">Add Item</button>
                     </Link>
                   </div>
+
+                  {/* History Button | Mac */}
+                  <div className="History_Div" style={{ marginTop: '20px' }}>
+                    <h3>View History</h3>
+                    <Link to="/History">
+                      <button className="HistoryButton">Go to History</button>
+                    </Link>
+                  </div>
+
                 </div>
               </main>
             }
@@ -71,6 +81,7 @@ function App() {
           <Route path="/Upload-Barcode" element={<Upload_Barcode />} />
           <Route path="/AI-Image" element={<AI_Image />} />
           <Route path="/Add-Item" element={<Add_Item />} />
+          <Route path="/History" element={<History />} /> {/* History Route */}
         </Routes>
       </div>
     </Router>
