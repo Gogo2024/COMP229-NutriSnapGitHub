@@ -23,7 +23,7 @@
 
 .Logout-Button {
   background-color: #2563eb; /* Tailwind's bg-blue-600 */
-  color: white;
+  color: rgb(16, 15, 15);
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -47,7 +47,8 @@
 .TrackMealsOptions {
   font-size: 1.25rem; /* Tailwind's text-xl */
   font-weight: 600; /* Tailwind's font-semibold */
-  margin-bottom: 16px; /* Tailwind's mb-4 */
+  margin-bottom: 16px;
+  color: #181919; /* Tailwind's mb-4 */
 }
 
 /* Upload Options */
@@ -93,7 +94,7 @@
 .Lunch_Div,
 .Dinner_Div,
 .Snacks_Div {
-  background-color: #f9fafb; /* Tailwind's bg-gray-50 */
+  background-color: #181919; /* Tailwind's bg-gray-50 */
   padding: 16px;
   border-radius: 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Tailwind's shadow-sm */
