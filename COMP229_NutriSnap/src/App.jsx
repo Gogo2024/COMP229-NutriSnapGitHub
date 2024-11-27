@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Upload_Barcode from './Upload_Barcode';
 import AI_Image from './AI_Image';
+import Text_Search from './Text_Search';
 import Add_Item from './Add_Item';
 import History from './History/History';
 import './App.css';
@@ -33,6 +34,11 @@ function App() {
                   <Link to="/AI-Image">
                     <button className="UploadImagetoAI">
                       <i className="AI_Image"></i> Upload Image for AI Suggestion
+                    </button>
+                  </Link>
+                  <Link to="/Text-Search">
+                    <button className="SearchTextforFood">
+                      <i className="Text_Search"></i> Text Search for Food
                     </button>
                   </Link>
                 </div>
@@ -80,6 +86,7 @@ function App() {
           {/* Pages */}
           <Route path="/Upload-Barcode" element={<Upload_Barcode />} />
           <Route path="/AI-Image" element={<AI_Image />} />
+          <Route path= "/Text-Search" element={<Text_Search/>}/>
           <Route path="/Add-Item" element={<Add_Item />} />
           <Route path="/History" element={<History />} /> {/* History Route */}
         </Routes>
