@@ -64,7 +64,7 @@ function App() {
                     </Link>
                   </div>
 
-                  {/* History Button | Mac */}
+                  {/* History Button | Mac Check*/}
                   <div className="History_Div" style={{ marginTop: '20px' }}>
                     <h3>View History</h3>
                     <Link to="/History">
