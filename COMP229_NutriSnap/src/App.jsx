@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [array, setArray] = useState([]);
   const [arrayMongoDB, setArrayMongoDB] = useState([]);
-  //Server
+
   const fetchAPI = async () => {
     try {
         const response = await axios.get("http://localhost:8080/api");
@@ -18,7 +18,7 @@ function App() {
         console.error("Error fetching data (API Response):", error);
     }
   };
-  //MongoDB
+
   const fetchAPIMongoDB = async () => {
     try {
         const response = await fetch("http://localhost:8080/apiMongo");
